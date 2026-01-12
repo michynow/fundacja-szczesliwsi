@@ -20,11 +20,7 @@ export default function SideNav({ open, onClose }: SideNavProps) {
         .join(" ")}
     >
       <div className="flex items-center justify-between p-4 border-b border-gray-200 shrink-0 bg-[url('@/public/assets/backgrounds/bubbles.svg')] relative before:w-full before:h-full before:absolute before:top-0 before:left-0 before:bg-[#198F51] before:-z-10">
-        <ButtonLink
-          color={"orange"}
-          variant={"solid"}
-          href={"#o-nas"}
-        >
+        <ButtonLink color={"orange"} variant={"solid"} href={"#o-nas"}>
           <div onClick={onClose}>Też chcę działać!</div>
         </ButtonLink>
         <button
@@ -35,16 +31,12 @@ export default function SideNav({ open, onClose }: SideNavProps) {
           <Close className="fill-white group-hover:fill-black" />
         </button>
       </div>
-      <nav
-        aria-label="Nawigacja boczna"
-        className="flex-1 overflow-y-auto"
-      >
+      <nav aria-label="Nawigacja boczna" className="flex-1 overflow-y-auto">
         <ul className="space-y-1">
-          {/* <li className="border-b border-gray-200 mb-0">
+          <li className="border-b border-gray-200 mb-0">
             <details className="group rounded-lg">
               <summary className="flex items-center justify-between px-7 py-4 cursor-pointer gap-2 font-semibold hover:bg-gray-50 rounded-lg">
                 <span className="text-xl">Fundacja</span>
-                <ChevronFilled className="transition-transform duration-200 group-open:rotate-180 min-w-10" />
               </summary>
               <ul className="ml-2 mt-1 overflow-hidden rounded-md ">
                 <li>
@@ -76,7 +68,7 @@ export default function SideNav({ open, onClose }: SideNavProps) {
                 </li>
               </ul>
             </details>
-          </li> */}
+          </li>
 
           <li className="border-b border-gray-200 mb-0">
             <Link
