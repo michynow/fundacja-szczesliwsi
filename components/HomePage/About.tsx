@@ -37,9 +37,9 @@ const About = () => {
           wpływające na długotrwałe szczęście i zadowolenie z życia to:
         </p>
         <ol className="list-decimal text-left text-lg lg:text-xl">
-          <li className="">Relacje międzyludzkie</li>
-          <li className="">Zdrowie fizyczne i psychiczne</li>
-          <li className="">Poczucie celu i sensu życia</li>
+          <li>Relacje międzyludzkie</li>
+          <li>Zdrowie fizyczne i psychiczne</li>
+          <li>Poczucie celu i sensu życia</li>
         </ol>
 
         <div className="flex-col md:flex-row flex mx-auto gap-6 mt-6">

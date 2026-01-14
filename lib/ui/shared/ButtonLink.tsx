@@ -36,6 +36,7 @@ type ButtonLinkProps = {
   href: string;
   children: React.ReactNode;
   target?: "_blank" | "_self" | "_parent" | "_top";
+  onClick?: () => void;
 };
 
 export default function ButtonLink({
@@ -45,6 +46,7 @@ export default function ButtonLink({
   href,
   children,
   target = "_self",
+  onClick,
 }: ButtonLinkProps) {
   const base = "block px-4 py-2 rounded-md font-black transition";
   const cv = styles[color][variant];
@@ -53,6 +55,7 @@ export default function ButtonLink({
       href={href}
       target={target}
       className={`${base} ${cv} ${className}`}
+      onClick={onClick}
     >
       {children}
     </a>
