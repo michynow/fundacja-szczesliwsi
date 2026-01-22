@@ -1,8 +1,8 @@
 import logo from "@/public/assets/global/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
-import MobileMenu from "./MobileMenu";
-import { TopNavigation } from "./TopNavigation";
+import MobileMenu from "./Navigation.tsx/MobileMenu";
+import { TopNavigation } from "./Navigation.tsx/TopNavigation";
 
 export default function Header() {
   return (
